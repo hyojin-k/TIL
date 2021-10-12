@@ -1,6 +1,6 @@
 # git branch 명령어 
 
-##local에서 branch 생성하기
+## local에서 branch 생성하기
 
 ### branch 생성
 ```

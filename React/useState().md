@@ -9,6 +9,11 @@
 
 - 리액트 훅(Hooks) 함수 중 하나
 - 함수형 컴포넌트에서 상태 관리 가능
+
+### useState 여러번 사용
+- 하나의 useState 함수는 하나의 상태 값만 관리할 수 있음
+- 컴포넌트에서 관리해야 할 상태가 여러개이면 useState 여러개 사용
+
 ----
 
 **const [상태 값 저장 변수, 상태 값 갱신 함수] = useState(상태 초기 값)**
@@ -21,6 +26,7 @@ const [number, setNumber] = useState(0);
 - setNumber - 상태값을 갱신해주는 Setter 함수
 - useState(0) - 상태의 초기 값 (string, number, Object, array 전부 담을 수 있음)
 
+
 **전체 코드**
 
 ```
@@ -28,10 +34,41 @@ const [number, setNumber] = useState(0);
 import React, {useState} from 'react';
 
 function App(){
+    const [name, setName] = useState('');
+    const [nickname, setNickname] = useState(');
+
+    const onChangeName = e =>{
+        setName(e.target.value);
+    }
+
+    const onChangeNickname = e =>{
+        setNickname(e.target.value);
+    }
+
+    return (
+        <div>
+            <input value={name} onChange={onCangeName} />
+            <input value={nickName} onChange={onCangeNickname} />
+            <div>
+                <p>이름 : {name}</p>
+                <p>닉네임 : {nickname}</p>
+            </div>
+        </div>
+    )
+}
+
+export default App;
+```
+
+#### deep copy
+```
+import React, {useState} from 'react';
+
+function App(){
     const [abc,setAbc] = useState(['a','b','c'])  => 변수에 담음
 
     function changeWord(){
-        <!-- setTitle(['A','b','c']) //state를 아예 대체해주는 함수 -->
+        <!-- setAbc(['A','b','c']) //state를 아예 대체해주는 함수 -->
 
         <!-- state의 복사본 생성(deep copy) - 값 공유를 하지 않고 완전히 새로운 배열 복사 (spread 사용) -->
         let newArray = [...abc]; 
@@ -51,6 +88,7 @@ function App(){
 
 export default App;
 ```
+
 ---
 
 #### state에 데이터 저장하는 이유

@@ -62,7 +62,7 @@
 - SPA에서 각 route마다 html head를 설정할 수 있게 도와줌
 
 ### react-snap
-- prerendering
+- prerendering하여 SEO 보완
 - js의 도움 없이 사이트의 내용물을 보여줄 수 있게 하는 라이브러리
 - 빌드 시점에 렌더링된 화면을 스크린샷 찍듯이 크롤링하여 static 파일로 만들어주는 역할
 
@@ -72,10 +72,3 @@
 - 이미 빌드한 시점에, 각각의 페이지에 대한 정적 HTML파일이 생성되어 서버에 올라가 있음
 - 검색 엔진 최적화에 유리
 - Next.js, Gatsby, Hugo, Jekylle, Hexo
-
-
-
-
-리액트 헬멧, 리액트 스냅 => 검색엔진최적화 보완 
-
-리액트의 단점 - seo - 해결방법 next.js - 

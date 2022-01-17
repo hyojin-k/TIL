@@ -1,4 +1,4 @@
-# redux middleware
+# redux middleware 라이브러리
 - 리덕스를 쉽게 쓸 수 있도록 도와주는 역할을 하는 라이브러리 
 - 액션이 스토어에서 상태값을 바꾸기 전에 특정 작업들을 수행하도록 함
 - store의 state를 변경하기 위해서는 dispatch를 이용해서 action으로 **객체만** 변경가능
@@ -33,6 +33,39 @@ const logger = createLogger();
 
 const store = createStore(reducers, applyMiddleware(logger));
 ```
+
+## redux-actions
+- createAction을 사용하여 액션 생성함수를 간단하게 작성
+```
+<!-- createAction 사용 x -->
+const ADD_USER = 'ADD_USER';
+
+export const add_user = user => ({type: ADD_USER, user});
+
+<!-- createAction 사용 o -->
+import {createAction} from 'redux-actions'; 
+const ADD_USER = 'ADD_USER';
+
+export const add_user = createAction(ADD_USER, user => user);
+```
+
+- 리듀서를 switch문이 아닌 handleActions 함수를 사용하여 작성할 수 있음
+```
+<!-- handleActions 사용 x -->
+const reducer = (state = initialState, action) =>{
+    switch (action.type){
+        case ADD_USER:
+            return {...state, user: action.user}
+    }
+}
+
+<!-- handleActions 사용 o -->
+import {handleActions} from 'redux-actions';
+const reducer = handleActions({
+    [ADD_USER]: (state, action) => ({...state, user: action.user})
+})
+```
+
 
 **참고**
 

@@ -41,10 +41,14 @@
 - [interface](https://github.com/hyojin-k/TIL/blob/main/TypeScript/interface.md)
 - [타입스크립트 기본 타입](https://github.com/hyojin-k/TIL/blob/main/TypeScript/%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%EA%B8%B0%EB%B3%B8%ED%83%80%EC%9E%85.md)
 
+## Next.js
+
+- [pre-rendering](https://github.com/hyojin-k/TIL/blob/main/Next.js/pre-rendering.md)
+
 ## CS
 
 - [CSR, SSR](https://github.com/hyojin-k/TIL/blob/main/CS/CSR%2C%20SSR.md)
-- [HTTP와 HTTPS](https://github.com/hyojin-k/TIL/blob/main/CS/HTTP.md)
+- [HTTP와 HTTPS](https://github.com/hyojin-k/TIL/blob/main/CS/HTTP%EC%99%80%20HTTPS.md)
 - [브라우저 렌더링 과정](https://github.com/hyojin-k/TIL/blob/main/CS/%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%20%EB%A0%8C%EB%8D%94%EB%A7%81%20%EA%B3%BC%EC%A0%95.md)
 - [토큰 기반 인증](https://github.com/hyojin-k/TIL/blob/main/CS/%ED%86%A0%ED%81%B0%20%EA%B8%B0%EB%B0%98%20%EC%9D%B8%EC%A6%9D.md)
 

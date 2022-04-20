@@ -37,6 +37,8 @@
 
 ## TypeScript
 
+- [Intersection types(교차타입)](<https://github.com/hyojin-k/TIL/blob/main/TypeScript/Intersection%20types(%EA%B5%90%EC%B0%A8%ED%83%80%EC%9E%85).md>)
+- [Literal(리터럴)](<https://github.com/hyojin-k/TIL/blob/main/TypeScript/Literal(%EB%A6%AC%ED%84%B0%EB%9F%B4).md>)
 - [function](https://github.com/hyojin-k/TIL/blob/main/TypeScript/function.md)
 - [interface](https://github.com/hyojin-k/TIL/blob/main/TypeScript/interface.md)
 - [타입스크립트 기본 타입](https://github.com/hyojin-k/TIL/blob/main/TypeScript/%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%EA%B8%B0%EB%B3%B8%ED%83%80%EC%9E%85.md)
